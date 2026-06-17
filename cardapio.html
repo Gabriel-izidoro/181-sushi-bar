@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio – 181 Sushi Bar</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <div class="demo-badge">Site Demonstrativo</div>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      181<span>sushi bar</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="index.html#reserva">Reservas</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO DO CARDÁPIO ── -->
+  <header class="cardapio-hero">
+    <div class="cardapio-hero-inner">
+      <span class="tag">Gastronomia</span>
+      <h1 class="titulo">Nosso <em>Cardápio</em></h1>
+      <div class="divisor" style="margin-top:20px">
+        <div class="divisor-line"></div>
+        <div class="divisor-dot"></div>
+        <div class="divisor-line"></div>
+      </div>
+      <p class="cardapio-hero-sub">
+        Ingredientes selecionados · Técnicas apuradas · Jacobina, BA
+      </p>
+      <p class="cardapio-hero-nota">
+        ✦ Cardápio sazonal — sujeito a alterações
+      </p>
+    </div>
+  </header>
+
+  <!-- ── TABS ── -->
+  <div class="tabs-wrap">
+    <div class="tabs">
+      <button class="tab ativo" data-tab="frios">Frios</button>
+      <button class="tab" data-tab="quentes">Quentes</button>
+      <button class="tab" data-tab="especiais">Especiais</button>
+      <button class="tab" data-tab="entradas">Entradas &amp; Bebidas</button>
+    </div>
+  </div>
+
+  <!-- ── PAINÉIS ── -->
+  <main class="paineis">
+
+    <!-- FRIOS -->
+    <section id="frios" class="painel ativo">
+      <p class="painel-titulo">Frios</p>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">
+            Carpaccio de Salmão
+            <span class="badge">Assinatura</span>
+          </div>
+          <p class="item-desc">
+            Finas lâminas de salmão fresco com azeite trufado, alcaparras,
+            raspas de limão siciliano e ovas de peixe voador.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Ceviche</div>
+          <p class="item-desc">
+            Peixe branco marinado em leite de tigre, coentro, cebola roxa
+            e pimenta dedo-de-moça. Refrescante e vibrante.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Sunomono</div>
+          <p class="item-desc">
+            Pepino em conserva com frutos do mar, gergelim torrado
+            e molho de arroz japonês. Clássico e delicado.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">
+            Salmão Brûlée Trufado
+            <span class="badge">Exclusivo</span>
+          </div>
+          <p class="item-desc">
+            Niguiri de salmão maçaricado com óleo de trufa, flor de sal
+            e microgreens. Elegância em cada mordida.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+    </section>
+
+    <!-- QUENTES -->
+    <section id="quentes" class="painel">
+      <p class="painel-titulo">Quentes</p>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">
+            Hot Tartar de Salmão
+            <span class="badge">Mais Pedido</span>
+          </div>
+          <p class="item-desc">
+            Tartar de salmão temperado envolto em empanado crocante,
+            maçaricado com molho especial da casa.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Ebi Crocante</div>
+          <p class="item-desc">
+            Camarão empanado em panko com cream cheese e molho
+            agridoce de manga. Textura irresistível.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Camarão Nikkei</div>
+          <p class="item-desc">
+            Camarão grelhado com manteiga de missô, limão e pimenta.
+            Fusão nipo-peruana em perfeito equilíbrio.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+    </section>
+
+    <!-- ESPECIAIS -->
+    <section id="especiais" class="painel">
+      <p class="painel-titulo">Especiais da Casa</p>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">
+            Nessamaki
+            <span class="badge">181 Original</span>
+          </div>
+          <p class="item-desc">
+            Criação exclusiva da casa. Peça ao nosso servidor para conhecer
+            os ingredientes desta combinação única.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Combinado do Chef</div>
+          <p class="item-desc">
+            Seleção sazonal com os melhores ingredientes disponíveis.
+            Varia conforme o dia — surpreenda-se.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Menu Degustação</div>
+          <p class="item-desc">
+            Experiência completa com entradas, pratos principais e sobremesa.
+            Disponível sob reserva para grupos.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+    </section>
+
+    <!-- ENTRADAS & BEBIDAS -->
+    <section id="entradas" class="painel">
+      <p class="painel-titulo">Entradas &amp; Bebidas</p>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Gyoza da Casa</div>
+          <p class="item-desc">
+            Pastel japonês selado, recheio especial do chef.
+            Servido com molho ponzu e óleo de gergelim.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Edamame</div>
+          <p class="item-desc">
+            Vagem de soja no vapor com flor de sal defumada. O começo perfeito.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">
+            Drinks Autorais
+            <span class="badge">Peça a carta</span>
+          </div>
+          <p class="item-desc">
+            Coquetéis criados com ingredientes frescos e destilados selecionados.
+            Veja as criações da noite com nosso servidor.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+
+      <div class="item">
+        <div class="item-esq">
+          <div class="item-nome">Saquê</div>
+          <p class="item-desc">
+            Saquê japonês tradicional servido quente ou frio.
+            Peça a seleção disponível.
+          </p>
+        </div>
+        <div class="item-preco">consulte</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── QR CODE ── -->
+  <section class="qr-section">
+    <div class="qr-inner">
+      <div class="qr-txt">
+        <h2 class="qr-titulo">
+          Cardápio digital<br/>no <em>QR Code</em>
+        </h2>
+        <p class="qr-desc">
+          Este QR code leva direto para esta página de cardápio.
+          Coloque em cada mesa — seus clientes escaneiam e acessam
+          na hora, sempre atualizado, sem papel e sem espera.
+        </p>
+        <p class="qr-nota">✦ Atualização instantânea · Zero custo de impressão</p>
+      </div>
+      <div class="qr-visual">
+        <div id="qrcode"></div>
+        <span class="qr-label">Escaneie para o cardápio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VOLTAR ── -->
+  <div class="voltar-wrap">
+    <a href="index.html">← Voltar ao site</a>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="foot-logo">181</div>
+    <div class="foot-copy">© 2026 · Site demonstrativo · Não oficial</div>
+    <div class="foot-ig">
+      <a href="https://instagram.com/181sushibar" target="_blank">@181sushibar</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
